@@ -10,7 +10,7 @@ El repositorio ya está estructurado como un **workspace de ROS 2**, por lo que 
 cd $HOME
 git clone https://github.com/Steevens98/Proyecto_F1Tenth_Parte1.git
 ```
-
+https://github.com/Steevens98/Proyecto_F1Tenth_Parte1/issues/1#issue-4815274076
 
 Estructura esperada del paquete:
 
