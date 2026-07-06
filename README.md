@@ -11,6 +11,7 @@ cd $HOME
 git clone https://github.com/Steevens98/Proyecto_F1Tenth_Parte1.git
 ```
 
+
 Estructura esperada del paquete:
 
 ```
@@ -21,21 +22,46 @@ Proyecto_F1Tenth_Parte1/
 │       │   ├── __init__.py
 │       │   ├── follow_the_gap.py
 │       │   └── lap_timer.py
+│       ├── resource
+│       │   └── f1tenth_controller
+│       ├── test
+│       │   ├── test_copyright.py
+│       │   ├── test_flake8.py
+│       │   └── test_pep257.py
 │       ├── package.xml
 │       ├── setup.cfg
 │       └── setup.py
-├── videos/                                                   
-├── README.md
-└── .gitignore           
+├── videos/
+│    ├── Archivos del simulador.mp4
+│    ├── Clonacion del repositorio.mp4
+│    ├── Compilacion.mp4
+│    ├── Ejecucion de los nodos.mp4
+│    ├── Ejecucion del simulador.mp4
+│    └── Ejecucion_Proyecto.mp4
+├── Oschersleben_map.png
+├── Oschersleben_map.yaml
+├── sim.yaml                                               
+└── README.md          
+```
+### Paso 2: Mover archivos del simulador f1tenth
+
+Mover los archivos del mapa `Oschersleben` del repositorio del proyecto a la carpeta maps del simulador f1tenth
+```bash
+mv ~/Proyecto_F1Tenth_Parte1/Oschersleben_map.png ~/Proyecto_F1Tenth_Parte1/Oschersleben_map.yaml ~/F1Tenth-Repository/src/f1tenth_gym_ros/maps/
 ```
 
-### Paso 2: Compilar el paquete
+Mover el archivo sim.yaml a la carpeta config del repositorio f1tenth
+```bash
+mv ~/Proyecto_F1Tenth_Parte1/sim.yaml ~/F1Tenth-Repository/src/f1tenth_gym_ros/config/
+```
+
+### Paso 3: Compilar el paquete
 
 ```bash
 cd Proyecto_F1Tenth_Parte1/
 colcon build
 ```
-### Paso 3: Ejecutar el simulador y los nodos
+### Paso 4: Ejecutar el simulador y los nodos
 
 ⚠️ Nota : Tener instalado el simulador, sino instalarlo : https://github.com/widegonz/F1Tenth-Repository
 
