@@ -51,6 +51,8 @@ mv ~/Proyecto_F1Tenth_Parte1/Oschersleben_map.png ~/Proyecto_F1Tenth_Parte1/Osch
 ```
 
 Mover el archivo sim.yaml a la carpeta config del repositorio f1tenth
+Al mover el archivo `sim.yaml` en la linea map_path: '/home/steevens/F1Tenth-Repository/src/f1tenth_gym_ros/maps/Oschersleben_map'
+reemplazar el `steevens` por su usuario '/home/your_user/F1Tenth-Repository/src/f1tenth_gym_ros/maps/Oschersleben_map'
 ```bash
 mv ~/Proyecto_F1Tenth_Parte1/sim.yaml ~/F1Tenth-Repository/src/f1tenth_gym_ros/config/
 ```
