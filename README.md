@@ -56,6 +56,14 @@ reemplazar el `steevens` por su usuario '/home/your_user/F1Tenth-Repository/src/
 ```bash
 mv ~/Proyecto_F1Tenth_Parte1/sim.yaml ~/F1Tenth-Repository/src/f1tenth_gym_ros/config/
 ```
+
+y luego en `F1Tenth-Repository` hacer 
+```bash
+cd $HOME
+cd F1Tenth-Repository/
+colcon build
+```
+
 https://github.com/user-attachments/assets/9fdbd5f8-d864-40f4-9961-c53f0831c5dd
 
 ### Paso 3: Compilar el paquete
