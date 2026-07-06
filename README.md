@@ -10,7 +10,7 @@ El repositorio ya está estructurado como un **workspace de ROS 2**, por lo que 
 cd $HOME
 git clone https://github.com/Steevens98/Proyecto_F1Tenth_Parte1.git
 ```
-https://github.com/Steevens98/Proyecto_F1Tenth_Parte1/issues/1#issue-4815274076
+[https://github.com/Steevens98/Proyecto_F1Tenth_Parte1/issues/1#issue-4815274076](https://github.com/user-attachments/assets/141c9a90-ff3f-42ba-b5f4-3e1f4af1f9c3)
 
 Estructura esperada del paquete:
 
@@ -54,6 +54,7 @@ Mover el archivo sim.yaml a la carpeta config del repositorio f1tenth
 ```bash
 mv ~/Proyecto_F1Tenth_Parte1/sim.yaml ~/F1Tenth-Repository/src/f1tenth_gym_ros/config/
 ```
+https://github.com/user-attachments/assets/9fdbd5f8-d864-40f4-9961-c53f0831c5dd
 
 ### Paso 3: Compilar el paquete
 
@@ -61,6 +62,8 @@ mv ~/Proyecto_F1Tenth_Parte1/sim.yaml ~/F1Tenth-Repository/src/f1tenth_gym_ros/c
 cd Proyecto_F1Tenth_Parte1/
 colcon build
 ```
+https://github.com/user-attachments/assets/cb89bc1c-1b89-4728-a642-b27b9ee64022
+
 ### Paso 4: Ejecutar el simulador y los nodos
 
 ⚠️ Nota : Tener instalado el simulador, sino instalarlo : https://github.com/widegonz/F1Tenth-Repository
@@ -71,15 +74,9 @@ cd ~/F1Tenth-Repository
 source install/setup.bash
 ros2 launch f1tenth_gym_ros gym_bridge_launch.py
 ```
+https://github.com/user-attachments/assets/434840ba-690b-4751-9306-9c25b0c568e0
 
 Lanzar los nodos en terminales separadas:
-
-Nodo `follow_the_gap.py`
-```bash
-cd Proyecto_F1Tenth_Parte1/
-source install/setup.bash
-ros2 run f1tenth_controller follow_the_gap
-```
 
 Nodo `lap_timer.py`
 ```bash
@@ -88,7 +85,20 @@ source install/setup.bash
 ros2 run f1tenth_controller lap_timer
 ```
 
-Parte 2: 📥 Expliacion del Nodo Controlador — `follow_the_gap.py`
+Nodo `follow_the_gap.py`
+```bash
+cd Proyecto_F1Tenth_Parte1/
+source install/setup.bash
+ros2 run f1tenth_controller follow_the_gap
+```
+
+https://github.com/user-attachments/assets/13780482-d2dd-47cb-bdbb-fa325e4088cf
+
+## Parte 2: Ejecucion del proyecto
+
+https://github.com/user-attachments/assets/1dcce691-4f2b-404d-826d-6874320082d8
+
+## Parte 3: 📥 Expliacion del Nodo Controlador — `follow_the_gap.py`
 
 ### 📘 ¿Qué hace este nodo?
 Este nodo implementa el algoritmo Follow the Gap para controlar el vehículo F1Tenth de manera reactiva:
@@ -234,7 +244,7 @@ class FollowTheGap(Node):
 ```
 * Publica el comando de control con la velocidad y dirección calculadas.
 
-Parte 3: 📥 Expliación del Nodo Cronómetro — `lap_timer.py`
+Parte 4: 📥 Expliación del Nodo Cronómetro — `lap_timer.py`
 
 ### 📘 ¿Qué hace este nodo?
 Este nodo registra y cronometra las vueltas completadas por el vehículo:
