@@ -106,7 +106,10 @@ https://github.com/user-attachments/assets/13780482-d2dd-47cb-bdbb-fa325e4088cf
 
 ## Parte 2: Ejecucion del proyecto
 
+https://youtu.be/ZiGPrY4MeQg
+
 https://github.com/user-attachments/assets/1dcce691-4f2b-404d-826d-6874320082d8
+
 
 ## Parte 3: 📥 Expliacion del Nodo Controlador — `follow_the_gap.py`
 
